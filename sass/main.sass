@@ -1,0 +1,401 @@
+@import vars
+@import fonts
+@import libs
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+input, textarea
+	outline: none
+	&:focus:required:invalid
+		border-color: red
+	&:required:valid
+		border-color: green
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: 'Ubuntu', sans-serif
+	overflow-x: hidden
+	color: $text
+	background-color: #f4f6f8
+
+// Custom Sass
+
+// navbar
+
+.bg-light
+	background-color: #fff
+
+.navbar
+	.nav-item
+		.nav-link
+			color: #34404b
+			font-size: 16px
+			font-weight: 300
+			&:hover
+				color: #000
+		&.active
+			.nav-link
+				color: #ff5912
+
+
+.nav-contact
+	border-bottom: 1px solid #ccc
+	.nav-item
+		margin: 0 4px
+	.contact
+		i
+			color: #ff5912	
+
+.nav-links
+	padding-top: 20px
+	padding-bottom: 20px
+	.control-panel
+		.nav-item
+			margin: 0 10px
+		.fa
+			font-size: 20px
+			&-search
+
+
+// main
+
+main
+	.card
+		max-width: 90%
+		text-align: center
+		
+		max-height: 346px
+		background: none
+		position: relative
+		
+
+		font-size: 18px
+		font-weight: 500
+
+		border: 0
+		border-radius: 0
+		padding: 0
+		margin: 0
+
+		margin-bottom: 30px
+		.card-inner
+			background-color: #ffffff
+			margin: 10px
+			margin-top: 0
+		&:hover 
+			position: relative
+			transition: all .1s
+			z-index: 15
+			.card-inner
+				box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1)
+			.card-img-top
+				width: 60%
+				height: 60%
+			.card-text
+				color: #ff5912
+				margin: 0
+			.card-price
+				margin: 0
+			.card-sizes
+				margin-top: -15px
+			.card-hover
+				display: block
+			.card-colors
+				display: block
+				justify-content: center
+				align-items: center
+				.item
+					width: 15px
+					height: 15px
+					border-radius: 100px
+					margin: 0 5px
+			.card-action
+				margin-top: -12px
+				padding: 4px 0
+				.item
+					margin: 0 10px
+					font-size: 24px
+					a
+						color: #34404b
+						&:hover
+							color: #ff5912
+		.card-hover
+			display: none
+		a
+			text-decoration: none	
+		.card-body
+			
+			margin: auto
+			padding: 15px
+
+			margin-right: 10px
+			margin-left: 10px
+
+		.card-img-top
+			width: 170px
+			height: 211px
+			margin: auto
+			padding: 10px
+		.card-text
+			margin-top: 15px
+			color: #34404b
+		.card-price
+			color: #ff5912
+			margin: 0
+
+// sidebar
+
+.sidebar
+	.item
+		padding: 30px
+		background-color: #fff
+		margin-bottom: 25px
+		a
+			color: #34404b
+			font-size: 16px
+			font-weight: 600
+			line-height: 50px
+		ul
+			margin: 0!important
+			margin-right: 0
+			margin: auto
+			width: 100%
+			padding: 0
+			li
+				margin: 2px 0
+				list-style: none
+				
+			.title
+				margin-bottom: 10px
+				color: #ff5912
+				font-size: 18px
+				font-weight: 900 
+
+
+
+// range
+
+input[type=range].form-control-range
+  -webkit-appearance: none
+  width: 100%
+  margin: 4.2px 0
+  &:focus
+    outline: none
+  &::-webkit-slider-runnable-track
+    width: 100%
+    height: 7.6px
+    cursor: pointer
+    box-shadow: 1px 1px 1px rgba(52, 64, 75, 0), 0px 0px 1px rgba(62, 77, 90, 0)
+    background: #dcdcdc
+    border-radius: 0px
+    border: 0px solid rgba(52, 64, 75, 0)
+  &::-webkit-slider-thumb
+    box-shadow: 1px 1px 3.5px rgba(52, 64, 75, 0.52), 0px 0px 1px rgba(62, 77, 90, 0.52)
+    border: 0px solid #34404b
+    height: 16px
+    width: 16px
+    border-radius: 50px
+    background: #34404b
+    cursor: pointer
+    -webkit-appearance: none
+    margin-top: -4.2px
+  &:focus::-webkit-slider-runnable-track
+    background: #dfdfdf
+  &::-moz-range-track
+    width: 100%
+    height: 7.6px
+    cursor: pointer
+    box-shadow: 1px 1px 1px rgba(52, 64, 75, 0), 0px 0px 1px rgba(62, 77, 90, 0)
+    background: #dcdcdc
+    border-radius: 0px
+    border: 0px solid rgba(52, 64, 75, 0)
+  &::-moz-range-thumb
+    box-shadow: 1px 1px 3.5px rgba(52, 64, 75, 0.52), 0px 0px 1px rgba(62, 77, 90, 0.52)
+    border: 0px solid #34404b
+    height: 16px
+    width: 16px
+    border-radius: 50px
+    background: #34404b
+    cursor: pointer
+  &::-ms-track
+    width: 100%
+    height: 7.6px
+    cursor: pointer
+    background: transparent
+    border-color: transparent
+    color: transparent
+  &::-ms-fill-lower
+    background: #d9d9d9
+    border: 0px solid rgba(52, 64, 75, 0)
+    border-radius: 0px
+    box-shadow: 1px 1px 1px rgba(52, 64, 75, 0), 0px 0px 1px rgba(62, 77, 90, 0)
+  &::-ms-fill-upper
+    background: #dcdcdc
+    border: 0px solid rgba(52, 64, 75, 0)
+    border-radius: 0px
+    box-shadow: 1px 1px 1px rgba(52, 64, 75, 0), 0px 0px 1px rgba(62, 77, 90, 0)
+  &::-ms-thumb
+    box-shadow: 1px 1px 3.5px rgba(52, 64, 75, 0.52), 0px 0px 1px rgba(62, 77, 90, 0.52)
+    border: 0px solid #34404b
+    height: 16px
+    width: 16px
+    border-radius: 50px
+    background: #34404b
+    cursor: pointer
+    height: 7.6px
+  &:focus
+    &::-ms-fill-lower
+      background: #dcdcdc
+    &::-ms-fill-upper
+      background: #dfdfdf
+
+input
+	background-color: #edf0f2!important
+	border: none
+	border-radius: 0!important
+	&:focus
+		box-shadow: none!important
+
+.input-group-text
+	padding: 4px
+	background: none
+	border: none
+
+.btn
+	border-radius: 0
+	border: 0
+.btn-warning
+	background-color: #ff5912
+	color: #fff
+	
+.form-check
+	margin: 0
+	padding: 0
+	margin-bottom: 10px
+
+input[type="checkbox"]
+  display: none
+  + label
+    display: block
+    position: relative
+    padding-left: 25px
+    margin-bottom: 20px
+
+    cursor: pointer
+    -webkit-user-select: none
+    -moz-user-select: none
+    -ms-user-select: none
+    &:last-child
+      margin-bottom: 0
+    &:before
+      content: ''
+      display: block
+      width: 20px
+      height: 20px
+      border: 1px solid #ff5912
+      position: absolute
+      left: 0
+      top: 4px
+      opacity: .6
+      -webkit-transition: all .12s, border-color .08s
+      transition: all .12s, border-color .08s
+  &:checked + label:before
+    width: 10px
+    top: -2px
+    left: 5px
+    border: 3px solid #ff5912
+    border-radius: 0
+    opacity: 1
+    border-top-color: transparent
+    border-left-color: transparent
+    -webkit-transform: rotate(45deg)
+    transform: rotate(45deg)
+
+
+// distribution
+.distribution
+	height: 123px
+	background-color: #ffffff
+
+	display: flex
+	justify-content: flex-start
+	align-items: center
+
+	margin-top: 30px
+	margin-bottom: 30px
+	.body
+		padding-left: 20px
+		padding-right: 20px
+
+		margin-top: 15px
+		display: flex
+		justify-content: center
+		p
+			margin-top: 3px
+			margin-left: 20px
+		h3
+			color: #ff5912
+			font-weight: 700
+			text-transform: uppercase
+	.input-group
+		width: 400px!important
+		margin-left: auto
+		margin-right: 15px
+		button
+			background-color: #ff5912
+			color: #fff
+
+.single
+	&-text
+		margin-top: 70px
+		max-width: 520px
+		h1
+			color: #ff5912
+			font-size: 52px
+			font-weight: 900
+			text-transform: uppercase
+		p
+			color: #495662
+			font-size: 16px
+			font-weight: 400
+			line-height: 29.97px
+			&.bold
+				color: #3c4751
+				font-weight: 600
+		.feat
+			a
+				color: #495662
+		hr
+			margin-top: 25px
+			margin-bottom: 25px
+		.action
+			float: right
+			.item
+				margin: 0 5px
+				font-size: 20px
+				a
+					color: #3c4751
+					&:hover
+						text-decoration: none
+						color: #ff5912
+		.btn
+			border-radius: 100px
+			padding: 7px 18px
+			margin: 0 auto
+			float: right
+			margin-top: -5px
+			margin-left: 20px
+			
+.single-prev
+	display: block
+	margin: 0 auto
+	margin-top: 80px
+	width: 40%

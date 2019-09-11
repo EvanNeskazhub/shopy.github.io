@@ -1,0 +1,974 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>SHOPY - Online Store</title>
+	<meta name="description" content="Startup HTML template OptimizedHTML 5">
+
+	<meta name="viewport" content="width=device-width">
+
+	<link rel="icon" href="img/favicon.png">
+	<meta property="og:image" content="">
+
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	
+	<link rel="stylesheet" href="css/styles.min.css">
+
+
+</head>
+
+<body>
+
+	
+
+	<header class="container">
+		
+		<nav class="navbar navbar-expand-lg navbar-light bg-none nav-contact container">
+
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto contact">
+
+					<li class="nav-item">
+						<a class="nav-link" href="mailto:info@shopy.com?subject=Вопрос">
+							<i class="fa fa-envelope-o" aria-hidden="true"></i>
+							info@shopy.com
+						</a>
+					</li>	
+
+					<li class="nav-item">
+						<a class="nav-link" href="tel:+9965553453">
+							<i class="fa fa-phone" aria-hidden="true"></i>
+							996 - 5553 - 453
+						</a>
+					</li>
+
+
+				</ul>
+
+				<ul class="navbar-nav ml-auto">
+
+
+					<li class="nav-item">
+						<a class="nav-link" href="#">
+							<i class="fa fa-facebook" aria-hidden="true"></i>
+						</a>
+					</li>
+
+
+					<li class="nav-item">
+						<a class="nav-link" href="#">
+							<i class="fa fa-twitter" aria-hidden="true"></i>
+						</a>
+					</li>	
+
+
+					<li class="nav-item">
+						<a class="nav-link" href="#">
+							<i class="fa fa-google-plus" aria-hidden="true"></i>
+						</a>
+					</li>
+
+
+					<li class="nav-item">
+						<a class="nav-link" href="#">
+							<i class="fa fa-instagram" aria-hidden="true"></i>
+						</a>
+					</li>
+
+
+				</ul>
+			</div>
+		</nav>
+
+		<nav class="navbar navbar-expand-lg navbar-light bg-none nav-links container">
+			<a class="navbar-brand" href="#">
+				<img src="img/logo.png" alt="">
+			</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+
+
+					<li class="nav-item active">
+						<a class="nav-link" href="index.html">Products</a>
+					</li>
+
+					<li class="nav-item">
+						<a class="nav-link" href="single-page.html">Single</a>
+					</li>
+
+					<li class="nav-item">
+						<a class="nav-link" href="exeption.html">Order registration</a>
+					</li>
+
+					<li class="nav-item">
+						<a class="nav-link" href="login.html">Log in</a>
+					</li>
+
+
+				</ul>
+
+				<ul class="navbar-nav ml-auto control-panel">
+
+					<li class="nav-item">
+						<a class="nav-link" href="#">
+							<i class="fa fa-search" aria-hidden="true"></i>
+						</a>
+					</li>
+
+					<li class="nav-item">
+						<a class="nav-link" href="#">
+							<i class="fa fa-user" aria-hidden="true"></i>
+						</a>
+					</li>
+
+					<li class="nav-item">
+						<a class="nav-link cart" href="#">
+							<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+							<span class="count"></span>
+						</a>
+					</li>
+
+
+				</ul>
+
+
+
+			</div>
+		</nav>
+
+	</header>
+
+
+	<main class="container">
+
+
+		<div class="row">
+
+
+			<div class="col-lg-3 sidebar">
+
+				<!-- item -->
+				<div class="item">
+					<ul>
+						<li class="title">Categories</li>
+						<li>
+							<a href="#">Hot Deals</a>
+						</li>
+						<li>
+							<a href="#">Childrens</a>
+						</li>
+						<li>
+							<a href="#">Women</a>
+						</li>
+						<li>
+							<a href="#">Man</a>
+						</li>
+					</ul>
+				</div>
+				<!-- /item -->
+
+				<!-- item -->
+				<div class="item">
+					<ul>
+						<li class="title">Price Filtter</li>
+
+						<li>
+							<div class="form-group">
+								<label for="formControlRange">Min cost: <b id="output1">10</b>$
+								</script></span></label>
+								<input type="range" class="form-control-range" id="formControlRangeMin" value="10" min="0" max="1000" step="10">
+							</div>
+
+							<div class="form-group">
+								<label for="formControlRange">Max cost: <b id="output2">2800</b>$</label>
+								<input type="range" class="form-control-range" id="formControlRangeMax" value="2800" min="1000" max="3000" step="50">
+							</div>
+						</li>
+
+						<li>
+							
+							<div class="input-group">
+<!-- 								<div class="input-group-prepend">
+									<span class="input-group-text" id="output" >From</span>
+								</div>
+								<input type="text" aria-label="First name" class="form-control">
+								<div class="input-group-prepend">
+									<span class="input-group-text">To</span>
+								</div>
+								<input type="text" aria-label="Last name" class="form-control">
+							</div> -->
+							<button type="button" class="btn btn-warning w-100 mt-3">Apply</button>
+						</li>
+
+					</ul>
+				</div>
+				<!-- /item -->
+
+				<!-- item -->
+				<div class="item">
+					<ul>
+						<li class="title">Sizes</li>
+
+
+						<li>
+							
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" value="" id="size1">
+								<label class="form-check-label" for="size1">
+									Small
+								</label>
+							</div>
+
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" value="" id="size2">
+								<label class="form-check-label" for="size2">
+									Midum
+								</label>
+							</div>
+
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" value="" id="size3">
+								<label class="form-check-label" for="size3">
+									Larg
+								</label>
+							</div>
+
+
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" value="" id="size4">
+								<label class="form-check-label" for="size4">
+									X Larg
+								</label>
+							</div>
+
+						</li>
+
+					</ul>
+				</div>
+				<!-- /item -->
+
+				<!-- item -->
+				<div class="item">
+					<ul>
+						<li class="title">Brands</li>
+
+
+						<li>
+							
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+								<label class="form-check-label" for="defaultCheck1">
+									Reebok
+								</label>
+							</div>
+
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+								<label class="form-check-label" for="defaultCheck2">
+									Addidas
+								</label>
+							</div>
+
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" value="" id="defaultCheck3">
+								<label class="form-check-label" for="defaultCheck3">
+									Nike
+								</label>
+							</div>
+
+
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" value="" id="defaultCheck4">
+								<label class="form-check-label" for="defaultCheck4">
+									Active
+								</label>
+							</div>
+
+						</li>
+
+					</ul>
+				</div>
+				<!-- /item -->
+
+
+			</div>
+
+			<div class="col-lg-9 content">
+
+				<div class="row">
+
+
+					<!-- item -->
+					<div class="col-lg-4 card">
+						<a href="single-page.html" class="card-inner">
+							<div class="card-body">
+								<img src="img/Product_Img1.png" class="card-img-top" alt="...">
+								<p class="card-text">
+									Reebok Track Jacket
+								</p>
+								<p class="card-price">
+									$100
+								</p>
+							</div>
+						</a>
+						<div class="card-hover">
+							<div class="card-inner">
+								<p class="card-sizes">
+									sizes    :    s - m - l - xl
+								</p>
+								<p class="card-colors d-flex">
+									<a href="#" class="item" style="background-color: red"></a>
+									<a href="#" class="item" style="background-color: black"></a>
+									<a href="#" class="item" style="background-color: blue"></a>
+									<a href="#" class="item" style="background-color: green"></a>
+								</p>
+								<p class="card-action">
+									<span class="item">
+										<a href="#">
+											<i class="fa fa-globe" aria-hidden="true"></i>
+										</a>
+									</span>
+									<span class="item">
+										<a href="#">
+											<i class="fa fa-cart-plus" aria-hidden="true"></i>
+										</a>
+									</span>
+									<span class="item">
+										<a href="#">
+											<i class="fa fa-heart-o" aria-hidden="true"></i>
+										</a>
+									</span>
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- /item -->
+
+
+
+					<!-- item -->
+					<div class="col-lg-4 card">
+						<a href="single-page.html" class="card-inner">
+							<div class="card-body">
+								<img src="img/Product_Img2.png" class="card-img-top" alt="...">
+								<p class="card-text">
+									Reebok Track Jacket
+									Reebok Track Jacket
+								</p>
+								<p class="card-price">
+									$100
+								</p>
+							</div>
+						</a>
+						<div class="card-hover">
+							<div class="card-inner">
+								<p class="card-sizes">
+									sizes : s - m - l - xl
+								</p>
+								<p class="card-colors d-flex">
+									<a href="#" class="item" style="background-color: red"></a>
+									<a href="#" class="item" style="background-color: black"></a>
+									<a href="#" class="item" style="background-color: blue"></a>
+									<a href="#" class="item" style="background-color: green"></a>
+								</p>
+								<p class="card-action">
+									<span class="item">
+										<a href="#">
+											<i class="fa fa-globe" aria-hidden="true"></i>
+										</a>
+									</span>
+									<span class="item">
+										<a href="#">
+											<i class="fa fa-cart-plus" aria-hidden="true"></i>
+										</a>
+									</span>
+									<span class="item">
+										<a href="#">
+											<i class="fa fa-heart-o" aria-hidden="true"></i>
+										</a>
+									</span>
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- /item -->
+
+
+
+
+					<!-- item -->
+					<div class="col-lg-4 card">
+						<a href="single-page.html" class="card-inner">
+							<div class="card-body">
+								<img src="img/Product_Img3.png" class="card-img-top" alt="...">
+								<p class="card-text">
+									Reebok Track Jacket
+								</p>
+								<p class="card-price">
+									$100
+								</p>
+							</div>
+						</a>
+						<div class="card-hover">
+							<div class="card-inner">
+								<p class="card-sizes">
+									sizes    :    s - m - l - xl
+								</p>
+								<p class="card-colors d-flex">
+									<a href="#" class="item" style="background-color: red"></a>
+									<a href="#" class="item" style="background-color: black"></a>
+									<a href="#" class="item" style="background-color: blue"></a>
+									<a href="#" class="item" style="background-color: green"></a>
+								</p>
+								<p class="card-action">
+									<span class="item">
+										<a href="#">
+											<i class="fa fa-globe" aria-hidden="true"></i>
+										</a>
+									</span>
+									<span class="item">
+										<a href="#">
+											<i class="fa fa-cart-plus" aria-hidden="true"></i>
+										</a>
+									</span>
+									<span class="item">
+										<a href="#">
+											<i class="fa fa-heart-o" aria-hidden="true"></i>
+										</a>
+									</span>
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- /item -->
+
+
+
+
+					<!-- item -->
+					<div class="col-lg-4 card">
+						<a href="single-page.html" class="card-inner">
+							<div class="card-body">
+								<img src="img/Product_Img3.png" class="card-img-top" alt="...">
+								<p class="card-text">
+									Reebok Track Jacket
+								</p>
+								<p class="card-price">
+									$100
+								</p>
+							</div>
+						</a>
+						<div class="card-hover">
+							<div class="card-inner">
+								<p class="card-sizes">
+									sizes    :    s - m - l - xl
+								</p>
+								<p class="card-colors d-flex">
+									<a href="#" class="item" style="background-color: red"></a>
+									<a href="#" class="item" style="background-color: black"></a>
+									<a href="#" class="item" style="background-color: blue"></a>
+									<a href="#" class="item" style="background-color: green"></a>
+								</p>
+								<p class="card-action">
+									<span class="item">
+										<a href="#">
+											<i class="fa fa-globe" aria-hidden="true"></i>
+										</a>
+									</span>
+									<span class="item">
+										<a href="#">
+											<i class="fa fa-cart-plus" aria-hidden="true"></i>
+										</a>
+									</span>
+									<span class="item">
+										<a href="#">
+											<i class="fa fa-heart-o" aria-hidden="true"></i>
+										</a>
+									</span>
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- /item -->
+
+
+
+					<!-- item -->
+					<div class="col-lg-4 card">
+						<a href="single-page.html" class="card-inner">
+							<div class="card-body">
+								<img src="img/Product_Img3.png" class="card-img-top" alt="...">
+								<p class="card-text">
+									Reebok Track Jacket
+								</p>
+								<p class="card-price">
+									$100
+								</p>
+							</div>
+						</a>
+						<div class="card-hover">
+							<div class="card-inner">
+								<p class="card-sizes">
+									sizes    :    s - m - l - xl
+								</p>
+								<p class="card-colors d-flex">
+									<a href="#" class="item" style="background-color: red"></a>
+									<a href="#" class="item" style="background-color: black"></a>
+									<a href="#" class="item" style="background-color: blue"></a>
+									<a href="#" class="item" style="background-color: green"></a>
+								</p>
+								<p class="card-action">
+									<span class="item">
+										<a href="#">
+											<i class="fa fa-globe" aria-hidden="true"></i>
+										</a>
+									</span>
+									<span class="item">
+										<a href="#">
+											<i class="fa fa-cart-plus" aria-hidden="true"></i>
+										</a>
+									</span>
+									<span class="item">
+										<a href="#">
+											<i class="fa fa-heart-o" aria-hidden="true"></i>
+										</a>
+									</span>
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- /item -->
+
+
+
+					<!-- item -->
+					<div class="col-lg-4 card">
+						<a href="single-page.html" class="card-inner">
+							<div class="card-body">
+								<img src="img/Product_Img3.png" class="card-img-top" alt="...">
+								<p class="card-text">
+									Reebok Track Jacket
+								</p>
+								<p class="card-price">
+									$100
+								</p>
+							</div>
+						</a>
+						<div class="card-hover">
+							<div class="card-inner">
+								<p class="card-sizes">
+									sizes    :    s - m - l - xl
+								</p>
+								<p class="card-colors d-flex">
+									<a href="#" class="item" style="background-color: red"></a>
+									<a href="#" class="item" style="background-color: black"></a>
+									<a href="#" class="item" style="background-color: blue"></a>
+									<a href="#" class="item" style="background-color: green"></a>
+								</p>
+								<p class="card-action">
+									<span class="item">
+										<a href="#">
+											<i class="fa fa-globe" aria-hidden="true"></i>
+										</a>
+									</span>
+									<span class="item">
+										<a href="#">
+											<i class="fa fa-cart-plus" aria-hidden="true"></i>
+										</a>
+									</span>
+									<span class="item">
+										<a href="#">
+											<i class="fa fa-heart-o" aria-hidden="true"></i>
+										</a>
+									</span>
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- /item -->
+
+
+					<!-- item -->
+					<div class="col-lg-4 card">
+						<a href="single-page.html" class="card-inner">
+							<div class="card-body">
+								<img src="img/Product_Img3.png" class="card-img-top" alt="...">
+								<p class="card-text">
+									Reebok Track Jacket
+								</p>
+								<p class="card-price">
+									$100
+								</p>
+							</div>
+						</a>
+						<div class="card-hover">
+							<div class="card-inner">
+								<p class="card-sizes">
+									sizes    :    s - m - l - xl
+								</p>
+								<p class="card-colors d-flex">
+									<a href="#" class="item" style="background-color: red"></a>
+									<a href="#" class="item" style="background-color: black"></a>
+									<a href="#" class="item" style="background-color: blue"></a>
+									<a href="#" class="item" style="background-color: green"></a>
+								</p>
+								<p class="card-action">
+									<span class="item">
+										<a href="#">
+											<i class="fa fa-globe" aria-hidden="true"></i>
+										</a>
+									</span>
+									<span class="item">
+										<a href="#">
+											<i class="fa fa-cart-plus" aria-hidden="true"></i>
+										</a>
+									</span>
+									<span class="item">
+										<a href="#">
+											<i class="fa fa-heart-o" aria-hidden="true"></i>
+										</a>
+									</span>
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- /item -->
+
+
+					<!-- item -->
+					<div class="col-lg-4 card">
+						<a href="single-page.html" class="card-inner">
+							<div class="card-body">
+								<img src="img/Product_Img2.png" class="card-img-top" alt="...">
+								<p class="card-text">
+									Reebok Track Jacket
+								</p>
+								<p class="card-price">
+									$100
+								</p>
+							</div>
+						</a>
+						<div class="card-hover">
+							<div class="card-inner">
+								<p class="card-sizes">
+									sizes    :    s - m - l - xl
+								</p>
+								<p class="card-colors d-flex">
+									<a href="#" class="item" style="background-color: red"></a>
+									<a href="#" class="item" style="background-color: black"></a>
+									<a href="#" class="item" style="background-color: blue"></a>
+									<a href="#" class="item" style="background-color: green"></a>
+								</p>
+								<p class="card-action">
+									<span class="item">
+										<a href="#">
+											<i class="fa fa-globe" aria-hidden="true"></i>
+										</a>
+									</span>
+									<span class="item">
+										<a href="#">
+											<i class="fa fa-cart-plus" aria-hidden="true"></i>
+										</a>
+									</span>
+									<span class="item">
+										<a href="#">
+											<i class="fa fa-heart-o" aria-hidden="true"></i>
+										</a>
+									</span>
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- /item -->
+
+	
+					<!-- item -->
+					<div class="col-lg-4 card">
+						<a href="single-page.html" class="card-inner">
+							<div class="card-body">
+								<img src="img/Product_Img2.png" class="card-img-top" alt="...">
+								<p class="card-text">
+									Reebok Track Jacket
+								</p>
+								<p class="card-price">
+									$100
+								</p>
+							</div>
+						</a>
+						<div class="card-hover">
+							<div class="card-inner">
+								<p class="card-sizes">
+									sizes    :    s - m - l - xl
+								</p>
+								<p class="card-colors d-flex">
+									<a href="#" class="item" style="background-color: red"></a>
+									<a href="#" class="item" style="background-color: black"></a>
+									<a href="#" class="item" style="background-color: blue"></a>
+									<a href="#" class="item" style="background-color: green"></a>
+								</p>
+								<p class="card-action">
+									<span class="item">
+										<a href="#">
+											<i class="fa fa-globe" aria-hidden="true"></i>
+										</a>
+									</span>
+									<span class="item">
+										<a href="#">
+											<i class="fa fa-cart-plus" aria-hidden="true"></i>
+										</a>
+									</span>
+									<span class="item">
+										<a href="#">
+											<i class="fa fa-heart-o" aria-hidden="true"></i>
+										</a>
+									</span>
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- /item -->
+
+
+					<!-- item -->
+					<div class="col-lg-4 card">
+						<a href="single-page.html" class="card-inner">
+							<div class="card-body">
+								<img src="img/Product_Img1.png" class="card-img-top" alt="...">
+								<p class="card-text">
+									Reebok Track Jacket
+								</p>
+								<p class="card-price">
+									$100
+								</p>
+							</div>
+						</a>
+						<div class="card-hover">
+							<div class="card-inner">
+								<p class="card-sizes">
+									sizes    :    s - m - l - xl
+								</p>
+								<p class="card-colors d-flex">
+									<a href="#" class="item" style="background-color: red"></a>
+									<a href="#" class="item" style="background-color: black"></a>
+									<a href="#" class="item" style="background-color: blue"></a>
+									<a href="#" class="item" style="background-color: green"></a>
+								</p>
+								<p class="card-action">
+									<span class="item">
+										<a href="#">
+											<i class="fa fa-globe" aria-hidden="true"></i>
+										</a>
+									</span>
+									<span class="item">
+										<a href="#">
+											<i class="fa fa-cart-plus" aria-hidden="true"></i>
+										</a>
+									</span>
+									<span class="item">
+										<a href="#">
+											<i class="fa fa-heart-o" aria-hidden="true"></i>
+										</a>
+									</span>
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- /item -->
+
+
+
+
+					<!-- item -->
+					<div class="col-lg-4 card">
+						<a href="single-page.html" class="card-inner">
+							<div class="card-body">
+								<img src="img/Product_Img2.png" class="card-img-top" alt="...">
+								<p class="card-text">
+									Reebok Track Jacket
+								</p>
+								<p class="card-price">
+									$100
+								</p>
+							</div>
+						</a>
+						<div class="card-hover">
+							<div class="card-inner">
+								<p class="card-sizes">
+									sizes    :    s - m - l - xl
+								</p>
+								<p class="card-colors d-flex">
+									<a href="#" class="item" style="background-color: red"></a>
+									<a href="#" class="item" style="background-color: black"></a>
+									<a href="#" class="item" style="background-color: blue"></a>
+									<a href="#" class="item" style="background-color: green"></a>
+								</p>
+								<p class="card-action">
+									<span class="item">
+										<a href="#">
+											<i class="fa fa-globe" aria-hidden="true"></i>
+										</a>
+									</span>
+									<span class="item">
+										<a href="#">
+											<i class="fa fa-cart-plus" aria-hidden="true"></i>
+										</a>
+									</span>
+									<span class="item">
+										<a href="#">
+											<i class="fa fa-heart-o" aria-hidden="true"></i>
+										</a>
+									</span>
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- /item -->
+
+
+
+					<!-- item -->
+					<div class="col-lg-4 card">
+						<a href="single-page.html" class="card-inner">
+							<div class="card-body">
+								<img src="img/Product_Img1.png" class="card-img-top" alt="...">
+								<p class="card-text">
+									Reebok Track Jacket
+								</p>
+								<p class="card-price">
+									$100
+								</p>
+							</div>
+						</a>
+						<div class="card-hover">
+							<div class="card-inner">
+								<p class="card-sizes">
+									sizes    :    s - m - l - xl
+								</p>
+								<p class="card-colors d-flex">
+									<a href="#" class="item" style="background-color: red"></a>
+									<a href="#" class="item" style="background-color: black"></a>
+									<a href="#" class="item" style="background-color: blue"></a>
+									<a href="#" class="item" style="background-color: green"></a>
+								</p>
+								<p class="card-action">
+									<span class="item">
+										<a href="#">
+											<i class="fa fa-globe" aria-hidden="true"></i>
+										</a>
+									</span>
+									<span class="item">
+										<a href="#">
+											<i class="fa fa-cart-plus" aria-hidden="true"></i>
+										</a>
+									</span>
+									<span class="item">
+										<a href="#">
+											<i class="fa fa-heart-o" aria-hidden="true"></i>
+										</a>
+									</span>
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- /item -->
+
+
+					<!-- load-more -->
+					<div class="col-lg-12 loading" style="height: 60px; margin-top: 25px; background-color: #fff; margin-bottom: 25px;">
+						<div class="d-flex justify-content-center mt-3">
+							<div class="spinner-border" role="status">
+								<span class="sr-only">Loading...</span>
+							</div>
+						</div>
+					</div>
+					<!-- /load-more -->
+
+
+				</div>
+
+			</div>
+
+
+		</div>
+
+
+		<div class="row">
+			<div class="col-lg-12 distribution">
+				<div class="body">
+					<h3>NEWS LETTER</h3> <p><i>join us now to get all news and special offers</i></p>
+
+
+				</div>
+				<div class="input-group">
+					<input type="email" class="form-control" placeholder="type your email here" aria-label="type your email here" aria-describedby="button-addon2">
+					<div class="input-group-append">
+						<button class="btn btn-outline-secondary" type="button" id="button-addon2">join us </button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</main>
+
+
+
+	<footer class="pt-4 my-md-5 pt-md-5 border-top container">
+		<div class="row">
+			<div class="col-12 col-md">
+				<img class="mb-2" src="img/logo.png" alt="">
+				<small class="d-block mb-3 text-muted">&copy; 2016-2019</small>
+			</div>
+			<div class="col-6 col-md">
+				<h5>Features</h5>
+				<ul class="list-unstyled text-small">
+					<li><a class="text-muted" href="#">Cool stuff</a></li>
+					<li><a class="text-muted" href="#">Random feature</a></li>
+					<li><a class="text-muted" href="#">Team feature</a></li>
+					<li><a class="text-muted" href="#">Stuff for developers</a></li>
+					<li><a class="text-muted" href="#">Another one</a></li>
+					<li><a class="text-muted" href="#">Last time</a></li>
+				</ul>
+			</div>
+			<div class="col-6 col-md">
+				<h5>Resources</h5>
+				<ul class="list-unstyled text-small">
+					<li><a class="text-muted" href="#">Resource</a></li>
+					<li><a class="text-muted" href="#">Resource name</a></li>
+					<li><a class="text-muted" href="#">Another resource</a></li>
+					<li><a class="text-muted" href="#">Final resource</a></li>
+				</ul>
+			</div>
+			<div class="col-6 col-md">
+				<h5>About</h5>
+				<ul class="list-unstyled text-small">
+					<li><a class="text-muted" href="#">Team</a></li>
+					<li><a class="text-muted" href="#">Locations</a></li>
+					<li><a class="text-muted" href="#">Privacy</a></li>
+					<li><a class="text-muted" href="#">Terms</a></li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+	<script src="js/scripts.min.js"></script>
+
+</body>
+</html>
